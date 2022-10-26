@@ -24,11 +24,12 @@
   command: tar -zxvf apache-tomcat-10.0.27.tar.gz -C /opt/tomcat/ creates=/opt/tomcat/apache-tomcat-10.0.27
   
 - name: Changer le dossier d'installation de tomcat
-  file: path=/opt/tomcat/apache-tomcat-10.0.27 
-  owner=tomcat 
-  group=tomcat 
-  state=directory 
-  recurse=yes
+  file: path=/opt/tomcat/apache-tomcat-10.0.27
+     owner=tomcat
+     group=tomcat
+     state=directory
+     recurse=yes
+
 
 
 - name: copier le fichier service
