@@ -74,4 +74,4 @@
   template:
     src: tomcat-users.xml.j2
     dest: /opt/tomcat/apache-tomcat-10.0.27/conf/tomcat-users.xml
-  notify: restart tomcait4
+  notify: restart tomcat4
