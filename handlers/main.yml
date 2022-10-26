@@ -1,2 +1,7 @@
 ---
-# handlers file for tomcat
+# handlers file for tomca
+- name: reload_tomcat
+  systemd:
+          name: tomcat4
+          state: reloaded
+
